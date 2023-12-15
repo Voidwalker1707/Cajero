@@ -2,7 +2,7 @@
 let datos = [
     { usuario: "david123", contraseña: 1234, saldo: 800 },
     { usuario: "esteban123", contraseña: 5555, saldo: 20 },
-    { usuario: "carechimba1", contraseña: 1111, saldo: 50 }
+    { usuario: "luffy123", contraseña: 1111, saldo: 50 }
 ];
 
 let botonDeSesion = document.getElementById("Iniciar");
@@ -35,10 +35,10 @@ function inicioDeSesion() {
 
         if (usuarioEncontrado) {
             mostrarAlerta("Inicio de sesión exitoso");
-            const selector = document.getElementById("login");
-            const ejecucion = document.getElementById("ejecucion");
-            selector.style = "display: none;";
-            ejecucion.style = "display: flex";
+            const selector = document.getElementById("login-sect");
+            const ejecucion = document.getElementById("ejecucion-section");
+            selector.style = "display: none";
+            ejecucion.style = "display: block";
             saldoActual = usuarioEncontrado.saldo; // Actualizar el saldo actual con el saldo del usuario
             consultarSaldo();
             retirarDinero();
